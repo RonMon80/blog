@@ -1,4 +1,4 @@
 class BlogPost < ApplicationRecord
-  def index
-  end
+  validates :title, presence: true
+  validates :body, presence: true
 end
