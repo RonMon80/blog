@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   # get "/blog_posts", to: "blog_posts#index
   #The routes above are the same as the "resources :blog_posts" below but we still need to keep the root path route.
 
+  devise_for :users
+
   resources :blog_posts
 
   # Defines the root path route ("/")
